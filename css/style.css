@@ -363,6 +363,10 @@ button:focus,
     margin-bottom  : 5px;
     }
 
+.expertise-item p {
+    margin-bottom : 5px;
+}
+
 /*-------------------
  * Skills Progressbar
  *-------------------*/
