@@ -1,254 +1,729 @@
-
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
+<html>
+<head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Steven R. Wilson</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- 
-    //////////////////////////////////////////////////////
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Steven R. Wilson</title>
 
-    FREE HTML5 TEMPLATE 
-    DESIGNED & DEVELOPED by FreeHTML5.co
-        
-    Website:        http://freehtml5.co/
-    Email:          info@freehtml5.co
-    Twitter:        http://twitter.com/fh5co
-    Facebook:       https://www.facebook.com/fh5co
+    <!-- favicon -->
+    <link href="favicon.png" rel=icon>
 
-    //////////////////////////////////////////////////////
-     -->
+    <!-- web-fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet">
 
-    <!-- Facebook and Twitter integration -->
-    <meta property="og:title" content=""/>
-    <meta property="og:image" content=""/>
-    <meta property="og:url" content=""/>
-    <meta property="og:site_name" content=""/>
-    <meta property="og:description" content=""/>
-    <meta name="twitter:title" content="" />
-    <meta name="twitter:image" content="" />
-    <meta name="twitter:url" content="" />
-    <meta name="twitter:card" content="" />
+    <!-- font-awesome -->
+    <link href="css/font-awesome.min.css" rel="stylesheet">
 
-    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link rel="shortcut icon" href="favicon.ico">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
-    
-    <!-- Animate.css -->
-    <link rel="stylesheet" href="css/animate.css">
-    <!-- Icomoon Icon Fonts-->
-    <link rel="stylesheet" href="css/icomoon.css">
-    <!-- Bootstrap  -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <!-- Theme style  -->
-    <link rel="stylesheet" href="css/style.css">
+    <!-- owl carousal -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
 
-    <!-- Modernizr JS -->
-    <script src="js/modernizr-2.6.2.min.js"></script>
-    <!-- FOR IE9 below -->
+    <!-- Style CSS -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="js/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+</head>
+<body>
+<div id="main-wrapper">
+<!-- Page Preloader -->
+<div id="preloader">
+    <div id="status">
+        <div class="status-mes"></div>
+    </div>
+</div>
 
-    </head>
-    <body style="background-image: url(images/bg_img.jpg);">
-    
-    <div id="fh5co-main">
-        <div class="fh5co-tab-wrap">
-            <ul class="fh5co-tab-menu">
-                <li class="active"><a href="#" data-tab="1"><span class="icon icon-user"></span><span class="menu-text">About</span></a></li>
-                <li><a href="#" data-tab="2"><span class="icon icon-lab"></span><span class="menu-text">Research</span></a></li>
-                <li><a href="#" data-tab="3"><span class="icon icon-newspaper"></span><span class="menu-text">News</span></a></li>
-                <li><a href="#" data-tab="4" data-pie="yes"><span class="icon icon-pacma"></span><span class="menu-text">Other</span></a></li>
-            </ul>
-            <div class="fh5co-tab-content active" data-content="1">
-                <div class="fh5co-content-inner text-center">
-                    <div class="row row-bottom-padded-sm">
-                        <div class="col-md-12">
-                            <figure>
-                                <img src="images/profile_img.jpg" alt="" data-position="center center" style="display:inline; border-radius: 50%; width: 150px; height: 150px; object-fit: cover;">
-                            </figure>
-                            <h1>Steve Wilson</h1>
-                            <p>Postdoctoral Research Fellow</p>
-                            <p><a href="http://lit.eecs.umich.edu" target="_blank">LIT Lab</a> &sub; <a href="http://ai.eecs.umich.edu/" target="_blank">AI Lab</a></p>
-                            <p><a href="http://cse.umich.edu/" target="_blank">Computer Science &amp; Engineering</a></p>
-                            <p><a href="https://umich.edu/" target="_blank">University of Michigan</a></p>
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="profile-img">
+                    <img src="img/img-profile.jpg" class="img-responsive" alt=""/>
+                </div>
+                <!-- Profile Image -->
+                <!---
+                <div class="cv-button">
+                    <a href="files/Wilson_CV.pdf" class="btn btn-small" target="_blank">Download CV</a>
+                </div>
+                -->
+            </div>
+            <div class="col-md-9">
+                <div class="name-wrapper">
+                    <h1 class="name">Steve Wilson</h1>
+                    <span>Postdoctoral Research Fellow, University of Michigan</span>
+                </div>
+                <p>
+                    <a href="https://steve-wilson.github.io">Steve</a> &straightepsilon; <a href="http://lit.eecs.umich.edu/" target="_blank">LIT Lab</a> &sub; <a href="http://ai.eecs.umich.edu/" target="_blank">Michigan AI</a> &sub; <a href="https://www.cse.umich.edu/" target="_blank">CSE</a> &sub; <a href="https://www.eecs.umich.edu/" target="_blank">EECS</a> &sub; <a href="https://www.engin.umich.edu/" target="_blank">College of Engineering</a> &sub; <a href="https://umich.edu" target="_blank">University of Michigan</a>
+                </p>
+                <p>
+                    I research how we can use AI and machine learning tools to learn things about people based on
+                    what they write in various settings. I've studied how language use
+                    is related to things like personal values, everyday activities, optimism, mental health, cultral
+                    background, and population. While most of my work can be categorized as using Natural Language Processing 
+                    tools to solve Computational Social Science or Computational Linguistics problems, I'm also interested
+                    in ethical implications of AI/NLP technology and AI education.
+                </p>
+
+<!--
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="personal-details">
+                            <strong>UNIVERSITY OF MICHIGAN <span>PHD, 2019</span></strong>
+                            <small>EDUCATION</small>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-md-12 fh5co-counter">
-                            <div class="fh5co-number fh5co-left">0</div>
-                            <div class="fh5co-text">
-                                <h3 class="border-bottom">Years of experience in Web Design</h3>
-                                <p>Far far away, behind the word mountains, far from the countries.</p>
-                            </div>
+                    <div class="col-md-3">
+                        <div class="personal-details">
+                            <strong>UNITED STATES</strong>
+                            <small>NATIONALITY</small>
                         </div>
                     </div>
-                    <ul class="fh5co-social">
-                        <li><a href="#"><i class="icon-envelope"></i></a></li>
-                        <li><a href="#"><i class="icon-twitter"></i></a></li>
-                        <li><a href="#"><i class="icon-instagram"></i></a></li>
-                        <li><a href="#"><i class="icon-google"></i></a></li>
-                        <li><a href="#"><i class="icon-linkedin"></i></a></li>
-                    </ul>
+                    <div class="col-md-6">
+                        <div class="personal-details">
+                            <strong>ENGLISH <span>(NATIVE)</span>, FRENCH <span>(INTERMEDIATE)</span></strong>
+                            <small>LANGUAGE</small>
+                        </div>
+                    </div>
+                </div>
+-->
+                <ul class="social-icon">
+                    <li><a href="files/Wilson_CV.pdf" target="_blank">CV</a></li>
+                    <li><a href="https://scholar.google.com/citations?user=xO0OWLEAAAAJ" target="_blank"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                    <!---<li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>--->
+                    <li><a href="https://www.linkedin.com/in/steven-wilson-29a623b5/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
+                    <li><a href="https://github.com/steve-wilson" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.researchgate.net/profile/Steven_Wilson11" target="_blank"><strong>R<sup>G</sup></strong></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- .header-->
+
+<section class="section-education section-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="section-title">
+                    <h2>News</h2>
                 </div>
             </div>
 
+            <div class="col-md-9">
+                <div class="row">
 
-            <!-- tab 2 -->
-            <div class="fh5co-tab-content" data-content="2">
-                <div class="fh5co-content-inner">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <!-- News Item 1 Start-->
+                        <div class="row vcenter">
 
-                            <div class="fh5co-feature">
-                                <div class="fh5co-icon">
-                                    <i class="icon-graduation-cap"></i>
-                                </div>
-                                <div class="fh5co-text">
-                                    <h2>2001-2004</h2>
-                                    <p>Far far away, behind the word mountains, far from the countries.</p>
+                            <div class="col-xs-1">
+                                <div class="content-item">
+                                <h1><i class="fa fa-briefcase" aria-hidden="true"></i></h1>
                                 </div>
                             </div>
+                            <div class="col-xs-9">
 
-                            <div class="fh5co-feature">
-                                <div class="fh5co-icon">
-                                    <i class="icon-graduation-cap"></i>
-                                </div>
-                                <div class="fh5co-text">
-                                    <h2>2004-2008</h2>
-                                    <p>Far far away, behind the word mountains, far from the countries.</p>
-                                </div>
-                            </div>
-
-                            <div class="fh5co-feature">
-                                <div class="fh5co-icon">
-                                    <i class="icon-graduation-cap"></i>
-                                </div>
-                                <div class="fh5co-text">
-                                    <h2>2008-2012</h2>
-                                    <p>Far far away, behind the word mountains, far from the countries.</p>
+                                <div class="content-item">
+                                    <small>May 2, 2019</small>
+                                    <h3> New Position starting Fall 2019</h3>
+                                    <h4>Research Associate (Postdoc)</h4>
+                                    <p>With the <a href="https://edinburghnlp.inf.ed.ac.uk/" target="_blank">University of Edinburgh Natural Language Processing Group</a>.</p>
                                 </div>
                             </div>
 
                         </div>
-                        
-                    </div>
+                        <!-- News Item 1 End -->
+
+                        <!-- News Item 1 Start-->
+                        <div class="row vcenter">
+
+                            <div class="col-xs-1">
+                                <div class="content-item">
+                                <h1><i class="fa fa-th-large" aria-hidden="true"></i></h1>
+                                </div>
+                            </div>
+                            <div class="col-xs-10">
+
+                                <div class="content-item">
+                                    <small>May 2, 2019</small>
+                                    <h3>Poster Presentation at <a href="https://ttic.uchicago.edu/~kgimpel/MSLD2019.html" target="_blank">MSLD 2019</a></h3>
+                                    <h4>"Clustering and Predicting Human Activities from User Generated Content"</h4>
+                                    <p>Steven R. Wilson and Rada Mihalcea.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- News Item End -->
+
+                        <!-- News Item Start-->
+                        <div class="row vcenter">
+                            <div class="col-xs-1">
+                                <div class="content-item">
+                                <h1><i class="fa fa-newspaper-o" aria-hidden="true"></i></h1>
+                                </div>
+                            </div>
+                            <div class="col-xs-10">
+
+                                <div class="content-item">
+                                    <small>April 10, 2019</small>
+                                    <h3>Paper accepted at <a href="https://starsem.org/2019/" target="_blank">*SEM 2019</a></h3>
+                                    <h4>"Multi-Label Transfer Learning for Multi-Relational Semantic Similarity "</h4>
+                                    <p>Li Zhang, Steven R. Wilson, and Rada Mihalcea.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- News Item End -->
+
+                        <!-- News Item Start-->
+                        <div class="row vcenter">
+                            <div class="col-xs-1">
+                                <div class="content-item">
+                                <h1><i class="fa fa-terminal" aria-hidden="true"></i></h1>
+                                </div>
+                            </div>
+                            <div class="col-xs-10">
+
+                                <div class="content-item">
+                                    <small>Feb 14, 2019</small>
+                                    <h3>Upcoming Tutorial at <a href="https://www.ds3-datascience-polytechnique.fr/day-4-5-sessions/" target="_blank">DS3</a></h3>
+                                    <h4>"Fundamentals of Text Analysis for User Generated Content"</h4>
+                                    <p>Hosted by École polytechnique and the DATAIA Institute.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- News Item End -->
+
+                </div>
+                <!--.row-->
+            </div>
+
+        </div>
+        <!--.row-->
+    </div>
+    <!-- .container -->
+</section>
+<!-- .section-education -->
+
+<section class="expertise-wrapper section-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="section-title">
+                    <h2>Publications</h2>
                 </div>
             </div>
 
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="expertise-item">
+                            <h3>"Multi-Label Transfer Learning for Multi-Relational Semantic Similarity"</h3>
 
-            <!-- tab 3 -->
-            <div class="fh5co-tab-content" data-content="3">
-                <div class="fh5co-content-inner">
-                    <div class="row">
-                        <div class="col-md-12">
-
-                            <p>I have the privilege to work with these cool companies.</p>
-
-                            <div class="fh5co-feature">
-                                <div class="fh5co-icon">
-                                    <i class="icon-black-tie"></i>
-                                </div>
-                                <div class="fh5co-text">
-                                    <h2>2008 - Present</h2>
-                                    <h3>XYZ Inc.</h3>
-                                    <p>Far far away, behind the word mountains, far from the countries.</p>
-                                </div>
-                            </div>
-
-                            <div class="fh5co-feature">
-                                <div class="fh5co-icon">
-                                    <i class="icon-black-tie"></i>
-                                </div>
-                                <div class="fh5co-text">
-                                    <h2>2004-2008</h2>
-                                    <h3>Previous Ltd Co.</h3>
-                                    <p>Far far away, behind the word mountains, far from the countries.</p>
-                                </div>
-                            </div>
-
-                            <div class="fh5co-feature">
-                                <div class="fh5co-icon">
-                                    <i class="icon-black-tie"></i>
-                                </div>
-                                <div class="fh5co-text">
-                                    <h2>1999-2004</h2>
-                                    <h3>Previous Ltd Co.</h3>
-                                    <p>Far far away, behind the word mountains, far from the countries.</p>
-                                </div>
-                            </div>
-
+                            <p>
+                                Zhang, L., <strong>Wilson, S.R.</strong>, &amp; Mihalcea, R. <em>*SEM 2019</em>.
+                            </p>
                         </div>
-                        
+                    </div>
+                    <div class="col-md-6">
+                        <div class="expertise-item">
+                            <h3>"Building and Validating Hierarchical Lexicons with a Case Study on Personal Values"</h3>
+
+                            <p>
+                                <strong>Wilson, S.R.</strong>, Shen, Y., &amp; Mihalcea, R. <em>SocInfo 2018</em>.
+                            </p>
+                        </div>
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="expertise-item">
+                            <h3>"Text-based Detection and Understanding of Changes in Mental Health"</h3>
+
+                            <p>
+                                Li, Y., Mihalcea, R., &amp; <strong>Wilson, S.R.</strong> <em>SocInfo 2018</em>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="expertise-item">
+                            <h3>"Sequantial Network Transfer: Adapting Sentence Embeddings to Human Actitives and Beyond"</h3>
+
+                            <p>
+                                Zhang, L., <strong>Wilson, S.R.</strong>, &amp; Mihalcea, R. <em>arXiv e-print</em>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="expertise-item">
+                            <h3>"Measuring Semantic Relations between Human Activities"</h3>
+
+                            <p>
+                                <strong>Wilson, S.R.</strong>, &amp; Mihalcea, R. <em>IJCNLP 2017</em>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="expertise-item">
+                            <h3>"Stateology: State-Level Interactive Charting of Language, Feelings, and Values."</h3>
+
+                            <p>
+                                Pappas, K., <strong>Wilson, S.R.</strong>, &amp; Mihalcea, R. <em>arXiv e-print</em>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="expertise-item">
+                            <h3>"Cruciform: Solving Crosswords with Natural Language Processing"</h3>
+
+                            <p>
+                                Radev, D., Zhang, R., <strong>Wilson, S.R.</strong> et al. <em>arXiv e-print</em>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="expertise-item">
+                            <h3>"Disentangling Topic Models: A Cross-Cultural Analysis of Personal Values through Words"</h3>
+
+                            <p>
+                                <strong>Wilson, S.R.</strong>, Mihalcea, R., Boyd, R.L., &amp; Pennebaker, J.W. <em>NLP+CSS @ EMNLP 2016</em>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="expertise-item">
+                            <h3>"Finding Optimistic and Pessimistic Users on Twitter"</h3>
+
+                            <p>
+                                Ruan, X., <strong>Wilson, S.R.</strong> &amp; Mihalcea, R. <em>ACL 2016</em>.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="expertise-item">
+                            <h3>"Cultural Influences on the Measurement of Personal Values through Words"</h3>
+
+                            <p>
+                                <strong>Wilson, S.R.</strong>, Mihalcea, R., Boyd, R.L., &amp; Pennebaker, J.W. <em>AAAI SSS 2016</em>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="expertise-item">
+                            <h3>"Values in Words: Using Language to Evaluate and Understand Personal Values"</h3>
+
+                            <p>
+                                Boyd, R.*, <strong>Wilson, S.R.*</strong>, Pennebaker, J.W. et al. <em>ICWSM 2015</em>.
+                            </p>
+                            <p>
+                            *equal contributions
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="expertise-item">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- .row -->
+
+
+    </div>
+</section>
+<!-- .expertise-wrapper -->
+
+<section class="section-education section-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="section-title"><h2>Education</h2></div>
             </div>
 
-            <!-- tab 4 -->
-            <div class="fh5co-tab-content" data-content="4">
-                <div class="fh5co-content-inner">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="content-item">
+                            <small>2013 - 2019</small>
+                            <h3>PhD, Computer Science &amp; Engineering</h3>
+                            <h4><strong>University of Michigan</strong>, Ann Arbor, Michigan, USA</h4>
+                            <p>Dissertation Title: Natural Language Processing for Personal Values and Human Activities.</p>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
-                            <div class="chart" data-percent="95"><span><strong>HTML5</strong>95%</span></div>
+                        <!-- .experience-item -->
+                        <div class="content-item">
+                            <small>2013 - 2015</small>
+                            <h3>MS, Computer Science &amp; Engineering</h3>
+                            <h4><strong>University of Michigan</strong>, Ann Arbor, Michigan, USA</h4>
+                            <p>Depth area: Intelligent Systems.</p>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
-                            <div class="chart" data-percent="93"><span><strong>CSS3</strong>93%</span></div>
+                        <!-- .experience-item -->
+                        <div class="content-item">
+                            <small>2009 - 2013</small>
+                            <h3>BS (w/ Highest Honors), Computer Science / Systems</h3>
+                            <h4><strong>Taylor University</strong>, Upland, Indiana, USA</h4>
+                            <p>Concentration: Intelligent Systems | Minor: Psychology.</p>
                         </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
-                            <div class="chart" data-percent="90"><span><strong>jQuery</strong>90%</span></div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
-                            <div class="chart" data-percent="89"><span><strong>PHP</strong>89%</span></div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
-                            <div class="chart" data-percent="85"><span><strong>MySQL</strong>85%</span></div>
-                        </div>
-                        <div class="col-md-4 col-sm-6 col-xs-12 text-center">
-                            <div class="chart" data-percent="90"><span><strong>AngularJS</strong>90%</span></div>
-                        </div>
-
+                        <!-- .experience-item -->
                     </div>
                 </div>
+                <!--.row-->
+            </div>
+
+        </div>
+        <!--.row-->
+    </div>
+    <!-- .container -->
+</section>
+<!-- .section-education -->
+
+<section class="section-wrapper">
+<div class="container">
+    <div class="row">
+
+        <div class="col-md-3">
+            <div class="section-title">
+                <h2>Places Visited</h2>
             </div>
         </div>
 
-        <!-- footer -->
-        <footer id="fh5co-footer">
-            <div class="row">
-                <div class="col-md-6 col-md-offset-3 text-center">
-                    <small>
-                        &copy; Steven Wilson 2019. All Rights Reserved. <span class="fh5co-author">
-                        Designed by <a href="http://freehtml5.co" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.com/" target="_blank">Unsplash</a></span>
-                    </small>
+        <div class="col-md-9">
+            <div id="mapdiv-countries" style="width: 100%; height: 300px;"></div>
+            <div id="mapdiv-states" style="width: 100%; height: 300px;"></div>
+            Maps created with <a href="https://www.amcharts.com/" target="_blank">amcharts.com</a>. Drive-through only and flight layovers not counted : )
+        </div>
+
+    </div>
+</div>
+</section>
+
+<section class="section-contact section-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="section-title">
+                    <h2>Contact</h2>
                 </div>
             </div>
-        </footer>
+
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-3">
+                        <address>
+                            <strong>Address</strong><br>
+                            2260 Hayward St, Room 3921<br>
+                            Ann Arbor, MI 48104
+
+                        </address>
+                    </div>
+                    <div class="col-md-3">
+                        <address>
+                            <strong>Email</strong><br>
+                            steverw [at] umich [d0t] edu
+                        </address>
+                    </div>
+
+                </div>
+                <!--.row-->
+
+        </div>
+        <!--.row-->
+
     </div>
-    
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
-    <!-- jQuery Easing -->
-    <script src="js/jquery.easing.1.3.js"></script>
-    <!-- Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
-    <!-- Waypoints -->
-    <script src="js/jquery.waypoints.min.js"></script>
-    <!-- Easy PieChart -->
-    <script src="js/jquery.easypiechart.min.js"></script>
-    <!-- MAIN JS -->
-    <script src="js/main.js"></script>
+    <!--.container-fluid-->
+</section>
+<!--.section-contact-->
 
-    </body>
+<footer class="footer">
+    <div class="copyright-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copytext">&copy; MyProfile, All rights reserved | Design By: <a
+                            href="https://themehippo.com">themehippo</a></div>
+                </div>
+            </div>
+            <!--.row-->
+        </div>
+        <!-- .container-fluid -->
+    </div>
+    <!-- .copyright-section -->
+</footer>
+<!-- .footer -->
+
+</div>
+<!-- #main-wrapper -->
+
+<!-- jquery -->
+<script src="js/jquery-2.1.4.min.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!--owl carousal-->
+<script src="js/owl.carousel.min.js"></script>
+<!--theme script-->
+<script src="js/scripts.js"></script>
+<!--charts scripts-->
+<script src="https://www.amcharts.com/lib/3/ammap.js" type="text/javascript"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/worldHigh.js" type="text/javascript"></script>
+<script src="https://www.amcharts.com/lib/3/maps/js/usaHigh.js" type="text/javascript"></script>
+<script src="https://www.amcharts.com/lib/3/themes/dark.js" type="text/javascript"></script>
+<script type="text/javascript">
+var map = AmCharts.makeChart("mapdiv-countries",{
+type: "map",
+theme: "dark",
+projection: "mercator",
+panEventsEnabled : true,
+backgroundColor : "#F4F4F4",
+backgroundAlpha : 1,
+zoomControl: {
+zoomControlEnabled : true
+},
+dataProvider : {
+map : "worldHigh",
+getAreasFromMap : true,
+areas :
+[
+	{
+		"id": "GR",
+		"showAsSelected": true
+	},
+	{
+		"id": "IS",
+		"showAsSelected": true
+	},
+	{
+		"id": "IT",
+		"showAsSelected": true
+	},
+	{
+		"id": "RU",
+		"showAsSelected": true
+	},
+	{
+		"id": "SE",
+		"showAsSelected": true
+	},
+	{
+		"id": "TR",
+		"showAsSelected": true
+	},
+	{
+		"id": "GB",
+		"showAsSelected": true
+	},
+	{
+		"id": "CA",
+		"showAsSelected": true
+	},
+	{
+		"id": "DO",
+		"showAsSelected": true
+	},
+	{
+		"id": "MX",
+		"showAsSelected": true
+	},
+	{
+		"id": "TT",
+		"showAsSelected": true
+	},
+	{
+		"id": "US",
+		"showAsSelected": true
+	},
+	{
+		"id": "CL",
+		"showAsSelected": true
+	},
+	{
+		"id": "TW",
+		"showAsSelected": true
+	}
+]
+},
+areasSettings : {
+autoZoom : true,
+color : "#B4B4B7",
+colorSolid : "#0E4F8C",
+selectedColor : "#0E4F8C",
+outlineColor : "#666666",
+rollOverColor : "#FFF896",
+rollOverOutlineColor : "#000000"
+}
+});
+</script>
+
+<script type="text/javascript">
+var map2 = AmCharts.makeChart("mapdiv-states",{
+type: "map",
+theme: "dark",
+panEventsEnabled : true,
+backgroundColor : "#F4F4F4",
+backgroundAlpha : 1,
+zoomControl: {
+zoomControlEnabled : true
+},
+dataProvider : {
+map : "usaHigh",
+getAreasFromMap : true,
+areas :
+[
+	{
+		"id": "US-AL",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-AR",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-AZ",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-CA",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-CO",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-DC",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-DE",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-FL",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-GA",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-IL",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-IN",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-KY",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-LA",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-MA",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-ME",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-MI",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-MN",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-MO",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-NC",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-NJ",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-NV",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-NY",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-OH",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-PA",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-TN",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-TX",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-UT",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-VA",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-VT",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-WA",
+		"showAsSelected": true
+	},
+	{
+		"id": "US-WV",
+		"showAsSelected": true
+	}
+]
+},
+areasSettings : {
+autoZoom : true,
+color : "#B4B4B7",
+colorSolid : "#0E4F8C",
+selectedColor : "#0E4F8C",
+outlineColor : "#666666",
+rollOverColor : "#FFF896",
+rollOverOutlineColor : "#000000"
+}
+});
+</script>
+</body>
 </html>
-
