@@ -244,6 +244,8 @@ button:focus,
 
 .header .profile-img {
     margin-right : 30px;
+    max-width: 500px;
+    max-height: 500px;
     }
 
 .header .name-wrapper {
